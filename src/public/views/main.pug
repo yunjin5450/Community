@@ -1,0 +1,18 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="/public/css/stylesheet.css")
+    body
+        header
+            h2 쪽지 기능 확인
+        main
+            div#sendMessage
+                button#messagePopup 쪽지보내기 
+            div#main
+                form
+
+script(src="/socket.io/socket.io.js")                              
+script(src="/public/js/main.js")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js")

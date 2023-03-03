@@ -1,0 +1,16 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="/public/css/stylesheet.css")
+    body
+        main
+            input#receiveNickname(placeholder="받는사람" type="text") 
+            input#title(placeholder="제목" type="textarea")
+            textarea#content(placeholder="내용")
+            button#send 보내기
+            
+script(src="/socket.io/socket.io.js")                                
+script(src="/public/js/notePopup.js")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js")

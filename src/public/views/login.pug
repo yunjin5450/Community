@@ -1,0 +1,23 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="/public/css/stylesheet.css")
+    body
+        header 
+            h2 로그인
+        main
+            div#Login
+                form 
+                    input#LoginID(placeholder="아이디", type="id")
+                    input#LoginPW(placeholder="비밀번호", type="current-password")
+                    button#LoginBtn 로그인 
+            div#goSignup
+                button#goSignup 회원가입
+
+            div#goSocial 
+                button#goSocial 소셜로그인
+                              
+script(src="/public/js/login.js")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js")

@@ -1,0 +1,25 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+        link(rel="stylesheet", href="/public/css/stylesheet.css")
+    body
+        header 
+            h2 회원가입
+        main
+            div#Signup
+                form 
+                    input#SignupID(placeholder="아이디", type="id")
+                    input#SignupPW(placeholder="비밀번호", type="current-password")
+                    input#SignupConfirmPW(placeholder="비밀번호 확인", type="new-password")
+                    input#SignupNickname(placeholder="닉네임")
+                    input#Email(type="email", placeholder="이메일")                
+                    input#phone(placeholder="휴대전화 숫자만입력")
+                    input#birth(placeholder="6자리 생년월일")
+                    button#SignupBtn 회원가입      
+                              
+script(src="/public/js/signup.js")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js")
+
+        
